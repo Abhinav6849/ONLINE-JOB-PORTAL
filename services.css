@@ -1,0 +1,166 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.top-nav {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.top-nav nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-nav nav a.active {
+  color: #ffcc00; /* Highlight the active page */
+}
+
+.top-nav .btn {
+  background-color: #ffffff;
+  color: #004080;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.services p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item i {
+  font-size: 40px;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer Section */
+footer.section-p1 {
+  background-color: #004080;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+footer .col {
+  flex: 1 1 200px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+footer .icon i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer .row img {
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+footer .copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .service-item {
+    padding: 20px;
+  }
+
+  .service-item h3 {
+    font-size: 20px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+  }
+}

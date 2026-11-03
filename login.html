@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Careers</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="login-box">
+      <form class="login-form" id="loginForm" action="LoginServlet" method="post">
+        <h2>Welcome Back</h2>
+        <p>Doesn't have an account yet? <a href="signup.html">Sign Up</a></p>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="vinnu@example.com" required />
+
+        <label for="password">
+          Password
+          <a href="forgot-password.html" class="forgot">Forgot Password</a>
+        </label>
+        <input type="password" id="password" name="password" placeholder="Enter 6+ characters" required />
+
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <div class="divider"><span>OR</span></div>
+
+        <div class="social-login">
+          <button class="linkedin">Login with LinkedIn</button>
+          <button class="google">Login with Google</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="illustration">
+      <img src="https://img.freepik.com/free-photo/job-hiring-vacancy-team-interview-career-recruiting_53876-121268.jpg?semt=ais_hybrid&w=740" alt="Illustration" />
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('error') && urlParams.get('error') === 'true') {
+      alert("Invalid email or password! Please try again.");
+    }
+  </script>
+
+</body>
+</html>
