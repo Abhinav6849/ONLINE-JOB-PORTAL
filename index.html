@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="logo">ONLINE JOB PORTAL</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="jobListing.html">Job Listings</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="services.html">Services</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- Display Login Success Message -->
+  <div id="login-success-message"
+    style="display:none; background-color: #4CAF50; color: white; text-align: center; padding: 10px;">
+    Login Successful!
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>A Powerful Career Website Template</h1>
+        <p>Find your dream jobs in our powerful career website template.</p>
+        <form class="search-form">
+          <input type="text" placeholder="Job title, keywords...">
+          <input type="text" placeholder="Anywhere">
+          <select>
+            <option>Part Time</option>
+            <option>Full Time</option>
+            <option>Internship</option>
+          </select>
+          <button type="submit">Search Job</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics">
+    <h2>Careers Statistics</h2>
+    <p>We empower thousands of professionals to find the right job every day. Here's what we’ve achieved so far:</p>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>2+</h3>
+        <p>Jobs Posted</p>
+      </div>
+      <div class="stat-item">
+        <h3>00+</h3>
+        <p>Companies Registered</p>
+      </div>
+      <div class="stat-item">
+        <h3>5+</h3>
+        <p>Active Job Seekers</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>User Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="section-p1">
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> S R Nagar , Hyderabad 500038</p>
+      <p><strong>Phone:</strong> +91 6202275569</p>
+      <p><strong>Hours:</strong> 10:00AM - 6:00PM</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Services</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="https://cdn.pixabay.com/photo/2021/09/22/16/07/google-play-6647242_1280.png" alt="Play Store">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Payment Gateways">
+    </div>
+
+    <div class="copyright">
+      <p>© 2024, NUNNA ABHINAV And JETLA VISHNU VARDHAN - All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Check if the login success parameter is present in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('loginSuccess') && urlParams.get('loginSuccess') === 'true') {
+      document.getElementById('login-success-message').style.display = 'block';
+    }
+  </script>
+
+</body>
+
+</html>
